@@ -1,0 +1,13 @@
+object BlackPointMain {
+  def main(args: Array[String]): Unit = {
+    if(args.length<3){
+      println(
+        """
+          |参数一：start_date yyyy-MM-dd
+          |参数二：end_date yyyy-MM-dd (时间周期为90天！)
+        """.stripMargin)
+      System.exit(0)
+    }
+    spark.stop()
+  }
+}
